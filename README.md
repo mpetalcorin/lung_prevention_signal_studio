@@ -34,13 +34,3 @@ chmod +x run_app.sh
 ./run_app.sh
 ```
 
-
-## GitHub push
-
-```bash
-cd ~/Downloads
-unzip -o lung_prevention_signal_studio_github_ready_streamlit_fixed.zip
-cd lung_prevention_signal_studio
-chmod +x push_to_github.sh
-./push_to_github.sh
-```
