@@ -1,7 +1,7 @@
 # Lung Prevention Signal Studio
 
 A colourful Streamlit portfolio app inspired by the Cell paper **“Plasma signals of lung tumor promotion for molecular cancer prevention”**.
-
+<img width="1663" height="946" alt="Lung Prevention Signal Studio" src="https://github.com/user-attachments/assets/b9d6679e-6b52-484a-b05e-c0277e9266b3" />
 The app uses synthetic data only and includes expanded modules:
 
 1. Cohort atlas with risk tiers and environmental burden.
