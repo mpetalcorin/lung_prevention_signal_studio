@@ -4,16 +4,16 @@ set -euo pipefail
 REPO_URL="https://github.com/mpetalcorin/lung_prevention_signal_studio.git"
 BRANCH="main"
 
-printf "\n🧬 Lung Prevention Signal Studio → GitHub deploy helper\n"
+printf "\n Lung Prevention Signal Studio → GitHub deploy helper\n"
 printf "Repository: %s\n\n" "$REPO_URL"
 
 if ! command -v git >/dev/null 2>&1; then
-  echo "❌ git is not installed. Install git first."
+  echo "git is not installed. Install git first."
   exit 1
 fi
 
 if [ ! -f "app.py" ]; then
-  echo "❌ Please run this script from inside the lung_prevention_signal_studio folder."
+  echo "Please run this script from inside the lung_prevention_signal_studio folder."
   exit 1
 fi
 
@@ -56,12 +56,12 @@ fi
 git add app.py README.md requirements.txt run_app.sh .gitignore .streamlit/config.toml push_to_github.sh
 
 if git diff --cached --quiet; then
-  echo "✅ No new changes to commit."
+  echo "No new changes to commit."
 else
   git commit -m "Add lung prevention signal studio Streamlit app"
 fi
 
-echo "\n🚀 Pushing to GitHub..."
+echo "\n Pushing to GitHub..."
 git push -u origin "$BRANCH"
 
-echo "\n✅ Done. Open: https://github.com/mpetalcorin/lung_prevention_signal_studio"
+echo "\n Done. Open: https://github.com/mpetalcorin/lung_prevention_signal_studio"
